@@ -11,9 +11,8 @@ public class HomeController {
 
 
     @GetMapping("")
-    public String home(Model model, @AuthenticationPrincipal OAuth2User user) {
+    public String home() {
 
-        model.addAttribute("userName", user.getAttribute("name"));
         return "index";
 
     }

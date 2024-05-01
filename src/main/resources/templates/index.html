@@ -4,6 +4,16 @@
 </head>
 <body>
     <h1>Oauth2 Login with Spring Security</h1>
-    You are successfully logged in <span th:text="${userName}" ></span>
+
+    <h2>Public</h2>
+    <ul>
+        <li><a th:href="@{/public/messages}">Public</a> endpoint.</li>
+    </ul>
+
+    <h2>Private</h2>
+    <ul>
+        <li><a th:href="@{/private/messages}">Private</a> endpoint with Google authentication.</li>
+    </ul>
+
 </body>
 </html>
